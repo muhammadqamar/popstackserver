@@ -28,7 +28,7 @@ app.post("/postdata", function (req, res) {
   console.log(req.body.ip)
   request(
     {
-      url: `https://popstack.us6.list-manage.com/subscribe/post-json?u=07bca3f7895bbbe1e7211e2d0&amp;id=513252f2c1&EMAIL=${req.body.email}&FNAME=${req.body.name}&IP=${req.body.ip}&SYSTEM=${req.body.system}&LOCATION=${req.body.location}&POPNAME=${req.body.pop}`,
+      url: `https://popstack.us6.list-manage.com/subscribe/post-json?u=07bca3f7895bbbe1e7211e2d0&amp;id=513252f2c1&EMAIL=${req.body.email}&POPUSER=${req.body.name}&IP=${req.body.ip}&SYSTEM=${req.body.system}&LOCATION=${req.body.location}&POPNAME=${req.body.pop}&ORIGIN=PopFooterEARequest`,
       headers: {
        
       },
